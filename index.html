@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+            container: {
+				center: true,
+				padding: '1rem',
+			}
+        }
+      }
+    }
+  </script>
+	
+</head>
+<body >
+
+<nav class="py-4 shadow-md bg-white">
+    <div class="container mx-auto px-4">
+        <section class="flex justify-between items-center">
+            <a href="#"><h1 class="text-2xl font-bold text-blue-400">Thanida.</h1></a>
+            <button 
+                id="menu-btn" 
+                class="block md:hidden focus:outline-none"
+                aria-expanded="false" 
+                aria-controls="menu">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <section 
+                id="menu" 
+                class="hidden md:flex flex-col md:flex-row md:gap-5 absolute md:static bg-white w-full md:w-auto left-0 top-16 md:top-auto shadow-md md:shadow-none">
+                <ul class="flex flex-col md:flex-row md:gap-5">
+                    <li><a class="text-black hover:bg-blue-400 hover:text-white px-4 py-2 rounded-xl block transition-all duration-300 ease-in-out text-center" href="#">Home</a></li>
+                    <li><a class="text-black hover:bg-blue-400 hover:text-white px-4 py-2 rounded-xl block transition-all duration-300 ease-in-out text-center" href="#about">About</a></li>
+                    <li><a class="text-black hover:bg-blue-400 hover:text-white px-4 py-2 rounded-xl block transition-all duration-300 ease-in-out text-center" href="#project">Project</a></li>
+                    <li><a class="text-black hover:bg-blue-400 hover:text-white px-4 py-2 rounded-xl block transition-all duration-300 ease-in-out text-center" href="#skill">Skills</a></li>
+                </ul>
+            </section>
+        </section>
+    </div>
+</nav>
+
+
+
+<header id="h1-port" class="mt-[200px] flex flex-col justify-center items-center text-center px-4 md:px-0">
+ 
+    <h1 class="text-3xl md:text-5xl font-bold">Welcome to my Portfolio</h1>
+    <div class="wrapper mt-4">
+        <div class="typing-demo"> 
+            I'm Thanida
+        </div>
+    </div>
+    
+    <div class="flex gap-5 mt-5 flex-wrap justify-center">
+        
+        <a class="flex justify-center items-center text-center px-4 py-2 rounded-xl shadow-xl bg-blue-300 hover:bg-blue-400 transition-all duration-300 ease-in-out" href="https://github.com/tha-thanida">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 64 64"><path fill="#fff" d="M32 0C14 0 0 14 0 32c0 21 19 30 22 30c2 0 2-1 2-2v-5c-7 2-10-2-11-5c0 0 0-1-2-3c-1-1-5-3-1-3c3 0 5 4 5 4c3 4 7 3 9 2c0-2 2-4 2-4c-8-1-14-4-14-15q0-6 3-9s-2-4 0-9c0 0 5 0 9 4c3-2 13-2 16 0c4-4 9-4 9-4c2 7 0 9 0 9q3 3 3 9c0 11-7 14-14 15c1 1 2 3 2 6v8c0 1 0 2 2 2c3 0 22-9 22-30C64 14 50 0 32 0"/></svg>
+        </a>
+       
+    </div>
+</header>
+
+<header id="about" class="fade-in-up" >
+    <div class="container mt-[10rem] px-4" style="scroll-margin-top: 100px;">
+        <section class="flex flex-col md:flex-row gap-10 justify-center items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl font-bold text-blue-400">About me</h1>
+                <p class="mt-3 leading-relaxed text-justify space-y-4">
+                    I am a computer science student with a strong passion for web development and UI/UX design. 
+                    I am committed to continuous learning and skill development, always eager to apply my knowledge 
+                    to real-world projects. My goal is to gain valuable experience and grow professionally in the field 
+                    of technology and design.
+                </p>
+            </div>
+            <img src="/img/com.png" alt="" class="mt-5 md:mt-0 rounded-full max-w-[250px] md:max-w-[400px]">
+        </section>
+    </div>
+</header>
+
+
+<section class="fade-in-up">
+    <div id="project" class="container mx-auto px-5 py-20" style="scroll-margin-top: 100px;">
+        <h1 class="text-center font-bold text-4xl text-blue-400 mb-10">Project</h1>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="shadow-xl rounded-xl p-6 bg-white hover:scale-105 transition-all duration-300 ease-in-out transform hover:shadow-2xl">
+                <h3 class="font-bold text-2xl text-center text-blue-400 mb-4">TU Guide</h3>
+                <p class="text-gray-700 mb-4">Designed a UI for upcoming events at the university with navigation routes, where users could select the Location button to navigate directly.</p>
+                <div class="flex flex-wrap justify-center">
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">Figma</span>
+                </div>
+            </div>
+           
+            <div class="shadow-xl rounded-xl p-6 bg-white hover:scale-105 transition-all duration-300 ease-in-out transform hover:shadow-2xl">
+                <h3 class="font-bold text-2xl text-center text-blue-400 mb-4">Garbiture</h3>
+                <p class="text-gray-700 mb-4">Designed a UI for chatbot answering questions, scanning images of waste to identify its category, and designing the map location of the nearest trash bins.</p>
+                <div class="flex flex-wrap justify-center">
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">Figma</span>
+                </div>
+            </div>
+            
+            <div class="shadow-xl rounded-xl p-6 bg-white hover:scale-105 transition-all duration-300 ease-in-out transform hover:shadow-2xl">
+                <h3 class="font-bold text-2xl text-center text-blue-400 mb-4">PM2.5 monitoring</h3>
+                <p class="text-gray-700 mb-4">Designed and developed a web application that allows users to check air quality and PM2.5 levels using the OpenWeatherMap API to fetch data.</p>
+                <div class="flex flex-wrap justify-center">
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">HTML</span>
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">CSS</span>
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">JavaScript</span>
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">Tailwind</span>
+                </div>
+            </div>
+            
+            <div class="shadow-xl rounded-xl p-6 bg-white hover:scale-105 transition-all duration-300 ease-in-out transform hover:shadow-2xl">
+                <h3 class="font-bold text-2xl text-center text-blue-400 mb-4">Course Addition and Withdrawal</h3>
+                <p class="text-gray-700 mb-4">Designed and developed a user-friendly course addition and withdrawal form, allowing users to easily input course information.</p>
+                <div class="flex flex-wrap justify-center">
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">HTML</span>
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">CSS</span>
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">JavaScript</span>
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">Tailwind</span>
+                </div>
+            </div>
+            
+            <div class="shadow-xl rounded-xl p-6 bg-white hover:scale-105 transition-all duration-300 ease-in-out transform hover:shadow-2xl">
+                <h3 class="font-bold text-2xl text-center text-blue-400 mb-4">My Portfolio</h3>
+                <p class="text-gray-700 mb-4">Designed and developed my own portfolio website, which showcases my skills, projects, and experiences.</p>
+                <div class="flex flex-wrap justify-center mt-[70px]">
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">HTML</span>
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">CSS</span>
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">JavaScript</span>
+                    <span class="text-white bg-blue-400 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">Tailwind</span>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+
+
+<section id="skill" class="fade-in-up">
+    <div class="container" style="scroll-margin-top: 100px;">
+        <h1 class="text-left font-bold text-3xl text-blue-400 mt-20 mb-5">Skills</h1>
+        <section>
+            <h1 class=" font-bold text-md mb-5">Technical Skills</h1>
+            <div class="flex gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#e14e1d" rx="60"/><path fill="#fff" d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z"/><path fill="#ebebeb" d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#0277bd" rx="60"/><path fill="#ebebeb" d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z"/><path fill="#fff" d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#f0db4f" rx="60"/><path fill="#323330" d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.889-3.092 12.889-15.12v-81.798h24.058v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.579c-17.357-7.388-28.871-16.668-28.871-36.258c0-18.044 13.748-31.792 35.229-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.731 12.029c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.139 14.778 14.608l6.014 2.577c20.449 8.765 31.963 17.699 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#00599c" rx="60"/><path fill="#fff" d="M110.759 210.517C65.125 210.517 28 173.392 28 127.759C28 82.125 65.125 45 110.759 45c29.445 0 56.908 15.846 71.668 41.353l-35.816 20.726c-7.387-12.768-21.126-20.7-35.852-20.7c-22.817 0-41.38 18.563-41.38 41.38c0 22.816 18.563 41.379 41.38 41.379c14.727 0 28.466-7.932 35.854-20.702l35.816 20.725c-14.76 25.51-42.223 41.356-71.67 41.356"/><path fill="#fff" d="M193.517 123.161h-9.196v-9.196h-9.194v9.196h-9.196v9.195h9.196v9.196h9.194v-9.196h9.196zm34.483 0h-9.196v-9.196h-9.194v9.196h-9.196v9.195h9.196v9.196h9.194v-9.196H228z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#242938" rx="60"/><path fill="url(#skillIconsTailwindcssDark0)" fill-rule="evenodd" d="M83 110q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5Q96.5 92 83 110m-45 54q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5q-18-4.502-31.5 13.5" clip-rule="evenodd"/><defs><linearGradient id="skillIconsTailwindcssDark0" x1="86.5" x2="163.5" y1="74" y2="185.5" gradientUnits="userSpaceOnUse"><stop stop-color="#32b1c1"/><stop offset="1" stop-color="#14c6b7"/></linearGradient></defs></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 128 128"><defs><linearGradient id="deviconBootstrap0" x1="76.079" x2="523.48" y1="10.798" y2="365.95" gradientTransform="translate(1.11 14.613)scale(.24566)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#9013fe"/><stop offset="1" stop-color="#6610f2"/></linearGradient><linearGradient id="deviconBootstrap1" x1="193.51" x2="293.51" y1="109.74" y2="278.87" gradientTransform="translate(0 52)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#f1e5fc"/></linearGradient><filter id="deviconBootstrap2" width="197" height="249" x="161.9" y="135.46" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="4"/><feGaussianBlur stdDeviation="8"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs><path fill="url(#deviconBootstrap0)" d="M14.985 27.712c-.237-6.815 5.072-13.099 12.249-13.099h73.54c7.177 0 12.486 6.284 12.249 13.099c-.228 6.546.068 15.026 2.202 21.94c2.141 6.936 5.751 11.319 11.664 11.883v6.387c-5.913.564-9.523 4.947-11.664 11.883c-2.134 6.914-2.43 15.394-2.202 21.94c.237 6.815-5.072 13.098-12.249 13.098h-73.54c-7.177 0-12.486-6.284-12.249-13.098c.228-6.546-.068-15.026-2.203-21.94c-2.14-6.935-5.76-11.319-11.673-11.883v-6.387c5.913-.563 9.533-4.947 11.673-11.883c2.135-6.914 2.43-15.394 2.203-21.94"/><path fill="url(#deviconBootstrap1)" d="M267.1 364.46c47.297 0 75.798-23.158 75.798-61.355c0-28.873-20.336-49.776-50.532-53.085v-1.203c22.185-3.609 39.594-24.211 39.594-47.219c0-32.783-25.882-54.138-65.322-54.138h-88.74v217zm-54.692-189.48h45.911c24.958 0 39.131 11.128 39.131 31.279c0 21.505-16.484 33.535-46.372 33.535h-38.67zm0 161.96v-71.431h45.602c32.661 0 49.608 12.03 49.608 35.49c0 23.459-16.484 35.941-47.605 35.941z" filter="url(#deviconBootstrap2)" transform="translate(1.494 2.203)scale(.24566)"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#f4f2ed" rx="60"/><g clip-path="url(#skillIconsFigmaLight0)"><path fill="#0acf83" d="M94.347 228c18.4 0 33.333-14.933 33.333-33.333v-33.334H94.347c-18.4 0-33.334 14.934-33.334 33.334S75.947 228 94.347 228"/><path fill="#a259ff" d="M61.013 128c0-18.4 14.934-33.333 33.334-33.333h33.333v66.666H94.347c-18.4 0-33.334-14.933-33.334-33.333"/><path fill="#f24e1e" d="M61.013 61.333C61.013 42.933 75.947 28 94.347 28h33.333v66.667H94.347c-18.4 0-33.334-14.934-33.334-33.334"/><path fill="#ff7262" d="M127.68 28h33.333c18.4 0 33.334 14.933 33.334 33.333s-14.934 33.334-33.334 33.334H127.68z"/><path fill="#1abcfe" d="M194.347 128c0 18.4-14.934 33.333-33.334 33.333S127.68 146.4 127.68 128s14.933-33.333 33.333-33.333S194.347 109.6 194.347 128"/></g><defs><clipPath id="skillIconsFigmaLight0"><path fill="#fff" d="M61 28h133.36v200H61z"/></clipPath></defs></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#242938" rx="60"/><path fill="url(#skillIconsPythonDark0)" d="M127.279 29c-50.772 0-47.602 22.018-47.602 22.018l.057 22.81h48.451v6.85H60.489S28 76.992 28 128.221s28.357 49.414 28.357 49.414h16.924v-23.773s-.912-28.357 27.905-28.357h48.054s26.999.436 26.999-26.094V55.546S180.338 29 127.279 29m-26.716 15.339a8.71 8.71 0 0 1 8.717 8.717a8.71 8.71 0 0 1-8.717 8.716a8.71 8.71 0 0 1-8.716-8.716a8.71 8.71 0 0 1 8.716-8.717"/><path fill="url(#skillIconsPythonDark1)" d="M128.721 227.958c50.772 0 47.602-22.017 47.602-22.017l-.057-22.811h-48.451v-6.849h67.696S228 179.966 228 128.736s-28.357-49.413-28.357-49.413h-16.924v23.773s.912 28.357-27.905 28.357H106.76s-27-.437-27 26.093v43.866s-4.099 26.546 48.961 26.546m26.716-15.339a8.71 8.71 0 0 1-8.717-8.716a8.71 8.71 0 0 1 8.717-8.717a8.71 8.71 0 0 1 8.717 8.717a8.71 8.71 0 0 1-8.717 8.716"/><defs><linearGradient id="skillIconsPythonDark0" x1="47.22" x2="146.333" y1="46.896" y2="145.02" gradientUnits="userSpaceOnUse"><stop stop-color="#387eb8"/><stop offset="1" stop-color="#366994"/></linearGradient><linearGradient id="skillIconsPythonDark1" x1="108.056" x2="214.492" y1="109.905" y2="210.522" gradientUnits="userSpaceOnUse"><stop stop-color="#ffe052"/><stop offset="1" stop-color="#ffc331"/></linearGradient></defs></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#f03c2e" rx="60"/><g clip-path="url(#skillIconsGit0)"><path fill="#fff" d="m224.225 119.094l-87.319-87.319a12.87 12.87 0 0 0-14.035-2.793a12.9 12.9 0 0 0-4.177 2.793L100.569 49.9l23 23c5.35-1.875 11.475-.594 15.737 3.669a15.31 15.31 0 0 1 3.631 15.831l22.169 22.169c5.363-1.85 11.55-.657 15.831 3.637a15.32 15.32 0 0 1 3.321 16.706a15.333 15.333 0 0 1-20.029 8.293c-1.86-.771-3.55-1.9-4.973-3.324c-4.5-4.5-5.612-11.125-3.337-16.669l-20.675-20.675v54.407a15.6 15.6 0 0 1 4.062 2.9a15.326 15.326 0 0 1-21.675 21.675a15.32 15.32 0 0 1-3.326-16.704a15.3 15.3 0 0 1 3.326-4.971c1.481-1.475 3.125-2.594 5.019-3.344v-54.913a15.2 15.2 0 0 1-5.019-3.343a15.315 15.315 0 0 1-3.3-16.757L91.644 58.814l-59.875 59.812a12.88 12.88 0 0 0-2.795 14.04a12.9 12.9 0 0 0 2.795 4.179l87.325 87.312a12.9 12.9 0 0 0 4.177 2.793a12.9 12.9 0 0 0 9.858 0a12.9 12.9 0 0 0 4.177-2.793l86.919-86.781a12.88 12.88 0 0 0 3.776-9.109a12.88 12.88 0 0 0-3.776-9.11"/></g><defs><clipPath id="skillIconsGit0"><path fill="#fff" d="M28 28h200v200H28z"/></clipPath></defs></g></svg>
+            </div>
+            <h1 class=" font-bold text-md mt-5 mb-5">Soft Skills</h1>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <div class="flex justify-center items-center shadow-lg rounded-xl p-5 hover:scale-105 transition-all duration-300 ease-in-out">
+                    <div class="text-center">
+                        <img class="mx-auto" src="/img/1.png" alt="#">
+                        <p class="font-bold mt-3">Creativity</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center shadow-lg rounded-xl p-5 hover:scale-105 transition-all duration-300 ease-in-out">
+                    <div class="text-center">
+                        <img class="mx-auto" src="/img/2.png" alt="#">
+                        <p class="font-bold mt-3">Teamwork</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center shadow-lg rounded-xl p-5 hover:scale-105 transition-all duration-300 ease-in-out">
+                    <div class="text-center">
+                        <img class="mx-auto" src="/img/3.png" alt="#">
+                        <p class="font-bold mt-3">Time Management</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center shadow-lg rounded-xl p-5 hover:scale-105 transition-all duration-300 ease-in-out">
+                    <div class="text-center">
+                        <img class="mx-auto" src="/img/4.png" alt="#">
+                        <p class="font-bold mt-3">Communication</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+    </div>
+</section>
+
+<footer class="bg-blue-400 py-3 mt-10">
+    <p class="text-center text-white">&copy; 2025 Tha. All rights reserved.</p>
+</footer>
+
+    <script src="script.js"></script>
+
+
+	
+</body>
+</html>
